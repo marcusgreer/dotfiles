@@ -1,2 +1,4 @@
+#==================================
+# ZSHRC: ZSH Profile (run on login)
+#==================================
 eval "$(/opt/homebrew/bin/brew shellenv)"
-

@@ -1,2 +1,8 @@
+#==================================
+# ZSHRC: ZSH Run Commands (run on new shell creation)
+#==================================
+
+# Shell Aesthetics
+fastfetch
 export STARSHIP_CONFIG=~/.dotfiles/starship/starship.toml
 eval "$(starship init zsh)"

@@ -4,6 +4,8 @@ brew "tmux"
 brew "zsh"
 brew "zsh-syntax-highlighting"
 brew "starship"
+brew "font-hack-nerd-font"
+brew "fastfetch"
 
 # vim tools
 brew "vim"
@@ -31,6 +33,7 @@ brew "docker"
 
 # kubernetes
 brew "kubectl"
+brew "k9s"
 
 # languages
 brew "node"

@@ -3,16 +3,23 @@
     name = Marcus Greer
     email = 16495842+marcusgreer@users.noreply.github.com
 
-# [color]
-#     ui = true
-#     branch = true
-#     diff = true
-#     interactive = true
-#     status = true
-# [color "status"]
-#     added = green
-#     changed = red
-#     deleted = red
-#     untracked = yellow
-# [push]
-#     default = matching
+[color]
+    ui = true
+    branch = true
+    diff = true
+    interactive = true
+    status = true
+[color "status"]
+    added = green
+    changed = red
+    deleted = red
+    untracked = yellow
+[push]
+    default = matching
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    unstage = reset HEAD --
+    last = log -1 HEAD
