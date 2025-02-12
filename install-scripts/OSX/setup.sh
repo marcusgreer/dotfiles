@@ -24,44 +24,28 @@ ln -sf ~/.dotfiles/zsh/zshrc ~/.zshrc
 DOTFILE_SYMLINKS+=('.zshrc')
 ln -sf ~/.dotfiles/zsh/zprofile ~/.zprofile
 DOTFILE_SYMLINKS+=('.zprofile')
-ln -s ~/.dotfiles/git/gitconfig ~/.gitconfig
+ln -sf ~/.dotfiles/git/gitconfig ~/.gitconfig
 DOTFILE_SYMLINKS+=('.gitconfig')
-ln -s ~/.dotfiles/git/gitignore_global ~/.gitconfig
+ln -sf ~/.dotfiles/git/gitignore_global ~/.gitignore_global
 DOTFILE_SYMLINKS+=('.gitignore_global')
 ln -sf ~/.dotfiles/homebrew/Brewfile ~/Brewfile
 DOTFILE_SYMLINKS+=('Brewfile')
+
+#==================================
+# TODO: figure out how to manage the creation of a new SSH Key for GH if necessary
+#==================================
+
 
 #==================================
 # Install Homebrew Package Manager
 #==================================
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Add Homebrew to PATH:
-# TODO: Find a way to do this without continually adding the same line to .zprofile
-echo >> ~/.zprofile
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 brew doctor
 brew update
 
 # Then pass in the Brewfile location...
 brew bundle --file ~/.dotfiles/homebrew/Brewfile
-
-#==================================
-# Install 1Password Password Manager
-#==================================
-brew install --cask 1password
-
-#==================================
-# Install VSCode 
-#==================================
-brew install visual-studio-code
-
-#==================================
-# Install Starship prompt
-#==================================
-brew install starship
 
 #==================================
 # END
