@@ -1,0 +1,43 @@
+# shell tools
+cask "iterm2"
+brew "tmux"
+brew "zsh"
+brew "zsh-syntax-highlighting"
+brew "starship"
+
+# vim tools
+brew "vim"
+brew "aspell"
+brew "ctags"
+
+# search tools
+brew "the_silver_searcher"
+
+# Source Control Tools
+brew "gh"
+brew "tig"
+
+# keyboard tools
+cask "karabiner-elements"
+
+# password manager
+cask "1password"
+
+# databases
+brew "postgresql@14"
+
+# docker
+brew "docker"
+
+# kubernetes
+brew "kubectl"
+
+# languages
+brew "node"
+brew "pyenv"
+brew "pyenv-virtualenv"
+brew "zlib" # needed for pyenv installing
+brew "sqlite"
+
+# IDEs / Text Editors
+cask "visual-studio-code"
