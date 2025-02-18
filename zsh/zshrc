@@ -1,8 +1,12 @@
 #==================================
-# ZSHRC: ZSH Run Commands (run on new shell creation)
+# ZSHRC: ZSH Run Commands (run on new shell)
 #==================================
 
 # Shell Aesthetics
 fastfetch
 export STARSHIP_CONFIG=~/.dotfiles/starship/starship.toml
 eval "$(starship init zsh)"
+
+# Initialize pyenv with virtualenv
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
