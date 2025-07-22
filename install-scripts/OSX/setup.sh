@@ -14,17 +14,17 @@ sudo rm -rf ~/.gitconfig > /dev/null 2>&1
 # Allow overriding with files of matching names in the custom-configs dir
 #==================================
 DOTFILE_SYMLINKS=()
-# ln -sf ~/.dotfiles/vim ~/.vim
+# ln -sf ~/dotfiles/vim ~/.vim
 # SYMLINKS+=('.vim')
-ln -sf ~/.dotfiles/vim/vimrc ~/.vimrc
+ln -sf ~/dotfiles/vim/vimrc ~/.vimrc
 DOTFILE_SYMLINKS+=('.vimrc')
-ln -sf ~/.dotfiles/zsh/zshrc ~/.zshrc
+ln -sf ~/dotfiles/zsh/zshrc ~/.zshrc
 DOTFILE_SYMLINKS+=('.zshrc')
-ln -sf ~/.dotfiles/zsh/zprofile ~/.zprofile
+ln -sf ~/dotfiles/zsh/zprofile ~/.zprofile
 DOTFILE_SYMLINKS+=('.zprofile')
-ln -sf ~/.dotfiles/git/gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/git/gitconfig ~/.gitconfig
 DOTFILE_SYMLINKS+=('.gitconfig')
-ln -sf ~/.dotfiles/git/gitignore_global ~/.gitignore_global
+ln -sf ~/dotfiles/git/gitignore_global ~/.gitignore_global
 DOTFILE_SYMLINKS+=('.gitignore_global')
 
 #==================================
@@ -41,7 +41,7 @@ brew doctor
 brew update
 
 # Then pass in the Brewfile location...
-brew bundle --file ~/.dotfiles/homebrew/Brewfile
+brew bundle --file ~/dotfiles/homebrew/Brewfile
 
 #==================================
 # END

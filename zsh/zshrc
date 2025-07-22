@@ -4,9 +4,23 @@
 
 # Shell Aesthetics
 fastfetch
-export STARSHIP_CONFIG=~/.dotfiles/starship/starship.toml
+
+export STARSHIP_CONFIG=~/dotfiles/starship/starship.toml
 eval "$(starship init zsh)"
 
 # Initialize pyenv with virtualenv
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# Created by `pipx` on 2025-04-18 23:54:49
+export PATH="$PATH:/Users/marcusgreer/.local/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Enable fzf key bindings
+source $(brew --prefix)/Cellar/fzf/$(fzf --version | cut -d ' ' -f 1)/shell/key-bindings.zsh
+
+# Enable fzf autocompletion
+source $(brew --prefix)/Cellar/fzf/$(fzf --version | cut -d ' ' -f 1)/shell/completion.zsh
