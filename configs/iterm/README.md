@@ -1,4 +1,4 @@
-Steps to Change Iterm Default Colors
+# Steps to Change Iterm Default Colors
 
 Launch iTerm2 and open preferences:
 - Open iTerm2.
