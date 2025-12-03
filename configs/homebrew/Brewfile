@@ -4,7 +4,7 @@ brew "tmux"
 brew "zsh"
 brew "zsh-syntax-highlighting"
 brew "starship"
-brew "font-hack-nerd-font"
+cask "font-hack-nerd-font"
 brew "fastfetch"
 
 # vim tools
@@ -25,9 +25,6 @@ cask "karabiner-elements"
 # password manager
 cask "1password"
 
-# databases
-brew "postgresql@14"
-
 # docker
 brew "docker"
 
@@ -46,4 +43,4 @@ brew "sqlite"
 cask "visual-studio-code"
 
 # fzf
-brew fzf
+brew "fzf"
