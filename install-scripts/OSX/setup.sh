@@ -7,7 +7,7 @@ set -u  # Exit on undefined variable
 # Configuration
 #==================================
 DOTFILES_DIR="${HOME}/.dotfiles"
-BACKUP_DIR="${HOME}/.dotfiles_backup_$(date +%Y%m%d_%H%M%S)"
+BACKUP_DIR="${HOME}/.dotfiles_backup/$(date +%Y%m%d_%H%M%S)"
 
 #==================================
 # Colors for output
